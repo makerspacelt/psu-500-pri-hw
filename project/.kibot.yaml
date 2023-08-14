@@ -37,7 +37,7 @@ outputs:
       color_theme: '_builtin_default'
       pages:
         - sheet: 'Drawings'
-          scaling: 4
+          scaling: 1
           layers: 
           - layer: F.Mask
             color: '#111111'
@@ -71,7 +71,7 @@ outputs:
       download: true
       solder_mask: '#104020'
       ray_tracing: true
-      width: 600
+      width: 800
       height: 800
       view: top
       zoom: 3
@@ -84,8 +84,8 @@ outputs:
       download: true
       rotate_x: 5
       rotate_z: -3
-      move_x: 0
-      move_y: 0
+      move_x: -1
+      move_y: 1
       solder_mask: '#104020'
       orthographic: false
       ray_tracing: true

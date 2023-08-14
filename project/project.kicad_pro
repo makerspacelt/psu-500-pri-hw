@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.39999999999999997
+          "min_clearance": 1.5
         }
       },
       "diff_pair_dimensions": [
@@ -55,9 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "courtyards_overlap|177467499|107892501|06789aed-afbd-4475-b7c3-f6b0fe1b4f32|ef31a626-4de3-486b-b3dd-624d5a660804"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -127,7 +125,8 @@
         0.5,
         1.0,
         1.5,
-        2.0
+        2.0,
+        2.5
       ],
       "via_dimensions": [
         {
@@ -378,6 +377,34 @@
       },
       {
         "bus_width": 12.0,
+        "clearance": 0.6,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "HV",
+        "nets": [
+          "/ac-dc/320V",
+          "/ac-dc/AC_L",
+          "/ac-dc/AC_L_F",
+          "/ac-dc/AC_L_F_PFC",
+          "/ac-dc/AC_N",
+          "/ac-dc/AC_N_F",
+          "/ac-dc/E_AC_L",
+          "/ac-dc/E_AC_N",
+          "Earth"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 2.5,
+        "via_diameter": 0.7,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -398,9 +425,7 @@
     "meta": {
       "version": 2
     },
-    "net_colors": {
-      "TX": "rgb(255, 0, 0)"
-    }
+    "net_colors": null
   },
   "pcbnew": {
     "last_paths": {
