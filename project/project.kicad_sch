@@ -1185,19 +1185,19 @@
       (reference "CY2") (unit 1) (value "2n2") (footprint "Capacitor_THT:C_Disc_D9.0mm_W5.0mm_P7.50mm")
     )
     (path "/39a95302-f23d-46b1-ac1d-072d6571958e/1fc37252-7875-46fa-8944-860147cbb6ba"
-      (reference "D1") (unit 1) (value "1N5408") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "D1") (unit 1) (value "~") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
     )
     (path "/39a95302-f23d-46b1-ac1d-072d6571958e/b7a4c2eb-b9bc-4f13-b3d8-b1e8c450402e"
-      (reference "D2") (unit 1) (value "1N5408") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "D2") (unit 1) (value "~") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
     )
     (path "/39a95302-f23d-46b1-ac1d-072d6571958e/81af1ea9-e4c4-44b4-87a7-7f53603d4d97"
-      (reference "D3") (unit 1) (value "B40C2300-1500A") (footprint "Diode_THT:Diode_Bridge_19.0x3.5x10.0mm_P5.0mm")
+      (reference "D3") (unit 1) (value "GBU1010") (footprint "Diode_THT:Diode_Bridge_19.0x3.5x10.0mm_P5.0mm")
     )
     (path "/39a95302-f23d-46b1-ac1d-072d6571958e/e4a6519f-1735-4691-a16a-4099b380de59"
-      (reference "D4") (unit 1) (value "1N5408") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "D4") (unit 1) (value "~") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
     )
     (path "/39a95302-f23d-46b1-ac1d-072d6571958e/65783d35-144d-4bb2-a3f0-097b060dca79"
-      (reference "D5") (unit 1) (value "1N5408") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
+      (reference "D5") (unit 1) (value "~") (footprint "Diode_THT:D_DO-201AD_P15.24mm_Horizontal")
     )
     (path "/0405197a-fb0e-4b42-a2be-4693a0b20dab/fd9ce975-5210-469d-8e8c-8c9a54ecdfac"
       (reference "D6") (unit 1) (value "S2M") (footprint "Diode_SMD:D_SMA_Handsoldering")
@@ -1380,7 +1380,7 @@
       (reference "U1") (unit 1) (value "LTV-817M") (footprint "Package_DIP:DIP-4_W10.16mm")
     )
     (path "/0405197a-fb0e-4b42-a2be-4693a0b20dab/312e7139-3605-401d-b469-007c6dd6329f"
-      (reference "U2") (unit 1) (value "UC3845_DIP8") (footprint "Package_DIP:DIP-8_W7.62mm")
+      (reference "U2") (unit 1) (value "UC3845B") (footprint "Package_DIP:DIP-8_W7.62mm")
     )
   )
 )
