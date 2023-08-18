@@ -23,6 +23,22 @@ if [ "$1" ]; then
 fi
 
 
+# regenerate qr code
+pcb_version="$(grep '\(rev "[^"]*\)"' project/project.kicad_pcb | cut -d'"' -f2)"
+echo "http://kms-psu-500.makerspace.lt/v${pcb_version}" \
+        | qrencode -o - -l H -m1 -d256 -s5 \
+        | convert media/kms-logo.png -threshold 90% -trim -resize 70x70 -gravity center -extent 75x75 - +swap -composite gen/qr_link.png
+
+# convert png to footprint as bitmap2component cannot be used from cli
+curl -sSL -X POST \
+	-F "module_name=qr" \
+	-F "threshold=127" \
+	-F "scale_factor=0.1" \
+	-F "thefile=@gen/qr_link.png" \
+	-F "submit=Upload" \
+	http://img2mod.wayneandlayne.com/img2mod_process.py \
+	> project/lib/footprint/qr.kicad_mod
+
 
 # generate documentation stuff
 run_kibot --out-dir ../gen/
